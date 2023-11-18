@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+Install gems
+```
+  bundle install
+```
 
-Things you may want to cover:
+Run tests
+```
+  rspec
+```
 
-* Ruby version
 
-* System dependencies
+## Soft delete functionality
+I implemented the soft delete functionality by defining the soft_delete function in the Item model. This function calls the update function which is inherited from RoR's ActiveRecord. To denote that an Item is soft deleted, we update it's deleted_at value to the current Time.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
