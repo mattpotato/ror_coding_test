@@ -1,17 +1,16 @@
-# README
-
 ## Setup
-Install gems
+1. Clone the repo
+2. Install gems
 ```
   bundle install
 ```
 
-Run tests
+3. Run tests
 ```
   rspec
 ```
 
 
 ## Soft delete functionality
-I implemented the soft delete functionality by defining the soft_delete function in the Item model. This function calls the update function which is inherited from RoR's ActiveRecord. To denote that an Item is soft deleted, we update it's deleted_at value to the current Time.
+I implemented the soft delete functionality by defining the soft_delete function in the Item model. This function calls the update function which is inherited from RoR's ActiveRecord. To denote that an Item is soft deleted, we update its deleted_at value to the current time.
 
